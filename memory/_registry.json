@@ -1,0 +1,43 @@
+{
+  "_readme": "链卡注册表。这是**单一事实源**：主键 id、别名、状态、下一步、工作目录、规矩全在这里，MEMORY.md 索引由 _gen_index.py 从这里重生成，别手改索引。示例数据，换成你自己的链即可。",
+  "active": [
+    {
+      "id": "demo-api-project",
+      "title": "示例·接口项目",
+      "aliases": ["接口", "api", "demo-api", "后端"],
+      "status": "进行中·鉴权已通",
+      "next": "①补限流；②把参数表同步进 README",
+      "work": "C:\\work\\demo-api",
+      "scripts": "server/app.py | tests/",
+      "deliverable": "对外 HTTP 接口 + 测试",
+      "file": "demo-api-project",
+      "rules": [
+        "跑测试前先起本地服务，端口写在 .env 里，别写死在代码里",
+        "对外接口改了必须同步 README 的参数表"
+      ]
+    },
+    {
+      "id": "demo-docs-project",
+      "title": "示例·文档项目",
+      "aliases": ["文档", "docs", "写稿"],
+      "status": "进行中·第 3 篇待审",
+      "next": "①等用户改第 3 篇；②补图注",
+      "work": "C:\\work\\demo-docs",
+      "scripts": "build.py",
+      "deliverable": "发布用长文 + 配图",
+      "file": "demo-docs-project",
+      "rules": [
+        "出稿先给用户改一遍再发布，别直接发",
+        "配图用无版权图，图注标来源"
+      ]
+    }
+  ],
+  "domains": {
+    "示例域": ["demo-api-project", "demo-docs-project"]
+  },
+  "alias_extras": {
+    "api项目": "demo-api-project",
+    "写文档": "demo-docs-project"
+  },
+  "dm_crosswalk": {}
+}

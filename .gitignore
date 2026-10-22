@@ -1,0 +1,14 @@
+# 运行时/个人数据不进仓库
+_trash/
+_staging.py
+.sync-server-state.json
+.sync-server.log
+*.bak
+*.bak-*
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+*.html
+!docs/*.html
